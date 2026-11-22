@@ -2,7 +2,7 @@
 layout: post
 title: "窗边的一瞬（示例）"
 author: "示例内容 · AI 生成"
-image: chuangbian-cover.png
+image: /assets/img/chuangbian-cover.png
 permalink: /example-poem/
 ---
 
