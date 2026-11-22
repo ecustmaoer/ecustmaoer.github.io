@@ -13,8 +13,6 @@ layout: default
   <div class="entries-heading"><span>文字与日常</span><span class="entries-label">NOTES</span></div>
   {% for post in paginator.posts %}
     {% include featured-post.html %}
-  {% else %}
-    <p class="entries-empty">新的故事，正在慢慢写下。</p>
   {% endfor %}
 </section>
 {% if paginator.total_pages > 1 %}
