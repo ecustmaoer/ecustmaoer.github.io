@@ -6,6 +6,9 @@ layout: default
   <h1>
     {{ page.title }}
   </h1>
+  {% if page.subtitle %}
+    <p class="poem-subtitle"><em>{{ page.subtitle }}</em></p>
+  {% endif %}
   {% if site.hide_post_date != true %}
     {% include post-date.html %}
   {% endif %}
