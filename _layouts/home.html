@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-{% for post in paginator.posts %}
-  {% include featured-post.html %}
-{% else %}
-  <section style="padding: 5rem 1rem; text-align: center;">
-    <h1>诗词小站</h1>
-    <p>作品待整理。</p>
-  </section>
-{% endfor %}
+<section class="journal-hero" aria-labelledby="hero-title">
+  <div class="hero-content">
+    <div class="hero-avatar"><img src="{{ '/assets/img/dot.gif' | relative_url }}" alt="Dot 的动态头像"></div>
+    <p class="hero-eyebrow">THOUGHTS &amp; MOMENTS</p>
+    <h1 id="hero-title">{{ site.title }}</h1>
+    <p class="hero-subtitle">{{ site.description }}</p>
+  </div>
+</section>
+<section class="journal-entries" aria-label="随感文章">
+  <div class="entries-heading"><span>文字与日常</span><span class="entries-label">NOTES</span></div>
+  {% for post in paginator.posts %}
+    {% include featured-post.html %}
+  {% else %}
+    <p class="entries-empty">新的故事，正在慢慢写下。</p>
+  {% endfor %}
+</section>
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.next_page %}<a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>{% endif %}
