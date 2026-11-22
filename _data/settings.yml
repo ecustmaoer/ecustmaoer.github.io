@@ -1,0 +1,12 @@
+disqus:
+  comments: false
+  disqus_shortname: ''
+google-ID: ''
+menu: []
+social: []
+pagination:
+  next_page: '较新作品'
+  previous_page: '较早作品'
+sharing_button_prompt: '分享'
+related_posts: '其他作品'
+post_date_prefix: '写于'

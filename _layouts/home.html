@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% for post in paginator.posts %}
+  {% include featured-post.html %}
+{% else %}
+  <section style="padding: 5rem 1rem; text-align: center;">
+    <h1>诗词小站</h1>
+    <p>作品待整理。</p>
+  </section>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.next_page %}<a class="pagination-button pagination-active next" href="{{ site.github.url }}{{ paginator.next_page_path }}">{{ site.data.settings.pagination.previous_page }}</a>{% endif %}
+  {% if paginator.previous_page %}<a class="pagination-button pagination-active" href="{{ site.github.url }}{{ paginator.previous_page_path }}">{{ site.data.settings.pagination.next_page }}</a>{% endif %}
+</div>
+{% endif %}
