@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我们曾在起点相遇"
+title: "我曾见过它还不聪明的时候"
 subtitle: "——写给与人工智能共同走过的四年"
 author: "Mao"
 image: /assets/img/chuangbian-cover.png
